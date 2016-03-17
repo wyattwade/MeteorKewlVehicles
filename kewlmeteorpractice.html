@@ -1,0 +1,133 @@
+<head>
+  <title>meteorpractice</title>
+</head>
+
+
+
+
+
+<body>
+   
+
+
+  
+  <nav class="navbar navbar-default">
+    
+    <div class="col-md-offset-1 col-md-10">
+    
+      <form class="carForm">
+    
+        
+          <select class="form-control my-input" name="carInputMake">
+              <option value="">Select A Make</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Subaru">Subaru</option>
+              <option value="BMW">BMW</option>
+              <option value="Aston Martin">Aston Martin</option>
+          </select>
+          
+          
+          <select class="form-control my-input" name="carInputColor">
+              <option value="">Select A Color</option>
+              <option value="Black">Black</option>
+              <option value="Silver">Silver</option>
+              <option value="White">White</option>
+              <option value="Red">Red</option>
+              <option value="Orange">Orange</option>
+              <option value="Blue">Blue</option>
+    
+          </select>
+          
+          
+          <select class="form-control my-input" name="carInputStyle">
+              <option value="">Select A Style</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Coupe">Coupe</option>
+              <option value="Convertalbe">Convertable</option>
+              <option value="Hatchback">Four</option>
+              <option value="SUV">SUV</option>          
+          </select>
+          
+          $<input type="number" class = "my-input form-control" name="carInputPrice" placeholder="Vehicle Price">
+          
+          <input type="text" class = "my-input form-control" name="carInputPicture" placeholder="image URL">
+  
+          
+          <input type="submit"  class="btn btn-default submit" value="Submit"/>
+      </form>
+    </div>
+  </nav>
+  
+    <div class="background-color col-md-10 col-md-offset-1">  
+   
+
+   
+  
+    <div class="find-car-tab  col-md-3">
+         Color <br><br>
+      <input type="checkbox" checked="{{showAll}}" class="show-all" value= checked> All <br>
+      <input type="checkbox" checked="{{showSilver}}" class="show-silver"> Silver <br>
+      <input type="checkbox" checked="{{showOrange}}" class="show-orange"> Orange <br>
+      <input type="checkbox" checked="{{showBlack}}" class="show-black"> Black <br>
+      <input type="checkbox" checked="{{showWhite}}" class="show-white"> White <br>
+      <input type="checkbox" checked="{{showRed}}" class="show-red"> Red <br>
+      <input type="checkbox" checked="{{showBlue}}" class="show-blue"> Blue <br><br><br>
+
+         Make <br><br>
+         
+      <input type="checkbox" checked="{{showSubaru}}" class="Subaru"> Subaru <br>
+      <input type="checkbox" checked="{{showToyota}}" class="Toyota"> Toyota <br>
+      <input type="checkbox" checked="{{showAstonMartin}}" class="Aston-Martin"> Aston-Martin <br>
+      <input type="checkbox" checked="{{showBMW}}" class="BMW"> BMW <br>
+
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  {{#each cars}}
+    {{> carTemplate}}
+  {{/each}}  
+  
+     </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<template name="carTemplate">
+
+    <div class="car-container col-md-offset-3">
+         
+        <div class= "float-left">
+          {{#if carPictureExists}}
+          <img class="image" src="{{carPicture}}">  
+          {{/if}}
+          <div class="make">{{carType}}</div>
+        </div>
+  
+  
+    
+          Color: {{carColor}}<br> 
+          Style: {{carStyle}}<br>
+          Price: {{carPrice}}<br>
+          <button class="delete btn btn-default submit float-right">Remove</button>
+
+  </div>  
+  
+  
+
+</template>
+
+

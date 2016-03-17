@@ -1,0 +1,71 @@
+body{
+    background: black;
+}
+
+.image{
+    height: 200px;
+    width: 300px;
+    border: solid black 1px;
+    margin-right: 20px;
+}
+
+.form-control{
+    height: 40px;
+    width: 230px;
+}
+
+
+.my-input{
+    float: left;
+}
+
+.btn{
+    height: 40px;
+    width: 120px;
+    background: green;
+    border: solid green;
+}
+
+.submit{
+    margin-left: 10px;
+}
+
+.car-container{
+    border: solid black;
+    height: 238px;
+    margin-top: 10px;
+    z-index: 4;
+    background-color:green;
+}
+
+.make{
+    width: 300px;
+    border: solid black 1px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.background-color{
+      background-color: #B6FCD5;
+      margin-top: -20px;
+}
+
+.find-car-tab{
+    height: 1000px;
+    background-color: black;
+    width: 260px;
+    margin-top: 10px ;
+    background-color: gray;
+    font-weight: bold;
+}
+
