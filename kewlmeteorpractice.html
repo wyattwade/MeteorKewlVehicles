@@ -9,9 +9,9 @@
 <body>
    
 
-
+<!-- <div id ='banner' class= 'col-md-offset-1 col-md-10'></div>  --> 
   
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default col-md-offset-1 col-md-10">
     
     <div class="col-md-offset-1 col-md-10">
     
@@ -64,23 +64,49 @@
    
   
     <div class="find-car-tab  col-md-3">
+ 
+ 
+      <br>
+      
          Color <br><br>
-      <input type="checkbox" checked="{{showAll}}" class="show-all" value= checked> All <br>
-      <input type="checkbox" checked="{{showSilver}}" class="show-silver"> Silver <br>
-      <input type="checkbox" checked="{{showOrange}}" class="show-orange"> Orange <br>
-      <input type="checkbox" checked="{{showBlack}}" class="show-black"> Black <br>
-      <input type="checkbox" checked="{{showWhite}}" class="show-white"> White <br>
-      <input type="checkbox" checked="{{showRed}}" class="show-red"> Red <br>
-      <input type="checkbox" checked="{{showBlue}}" class="show-blue"> Blue <br><br><br>
+      <input type="checkbox"  class="show-silver colorCheckBox"> Silver <br>
+      <input type="checkbox"  class="show-orange colorCheckBox"> Orange <br>
+      <input type="checkbox"  class="show-black colorCheckBox"> Black <br>
+      <input type="checkbox"  class="show-white colorCheckBox"> White <br>
+      <input type="checkbox"  class="show-red colorCheckBox"> Red <br>
+      <input type="checkbox"  class="show-blue colorCheckBox"> Blue <br><br><br>
 
          Make <br><br>
          
-      <input type="checkbox" checked="{{showSubaru}}" class="Subaru"> Subaru <br>
-      <input type="checkbox" checked="{{showToyota}}" class="Toyota"> Toyota <br>
-      <input type="checkbox" checked="{{showAstonMartin}}" class="Aston-Martin"> Aston-Martin <br>
-      <input type="checkbox" checked="{{showBMW}}" class="BMW"> BMW <br>
+      <input type="checkbox"  class="Subaru carCheckBox"> Subaru <br>
+      <input type="checkbox"  class="Toyota carCheckBox"> Toyota <br>
+      <input type="checkbox"  class="Aston-Martin carCheckBox"> Aston-Martin <br>
+      <input type="checkbox" class="BMW carCheckBox"> BMW <br>
 
+    
+        <select class="form-control my-input  max-price" name="maxPrice">
+            <option data-price="">Select A Max Price</option>
+            <option data-price="5000">5000</option>
+            <option data-price="10000">10000</option>
+            <option data-price="15000 ">15000</option>
+            <option data-price="20000">20000</option>
+            <option data-price="25000">25000</option>
+            <option data-price="30000">30000</option>
+            <option data-price="40000">40000</option>
+            <option data-price="50000">50000</option>
+            <option data-price="60000">60000</option>
+            <option data-price="70000">70000</option>
+
+            
+        </select>
+
+
+    
     </div>
+    
+    
+    
+    
   
   
   
@@ -95,6 +121,10 @@
   
      </div>
 </body>
+
+
+
+
 
 
 
